@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@100;400&display=swap');
+
+/* *{
+    border: 1px solid #000;
+}
+ */
+body {
+    margin: 0;
+    font-family: "Poppins", serif;
+    font-style: normal;
+    background-color: #334e70;
+}
+
+.material-symbols-outlined{
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: bold;
+/*     margin-left: 5px; */
+}
+
+button > span {
+    transition: transform 1s ease;
+}
+
+button > span:hover{
+    /* font-weight: 900; */
+   /*  color: #1e3f66; */
+    /* font-size: 50px; */
+    transform: scale(1.5);
+}
+
+
+#navbarSection ul{
+    padding: 0;
+    margin: 0;
+    border: 1px solid #006b00;
+    display: flex;
+    align-items: center; 
+    height: 3em;
+    justify-content: space-between;
+    list-style: none;
+    background-color: #1e3f66;
+}
+
+#navbarSection ul > li{
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+ #navbarSection ul > li > img,  #navbarSection ul > li > h4, a{
+    color: #ffffff; 
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+a {
+    position: relative;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.6s ease-in;
+}
+
+a:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#navbarSection ul > li > img{
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+h4{
+    margin: 0px;
+    display: inline-block;
+    font-size: 22px;
+}
+
+.initContainer{
+    border: 1px Solid #727203;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 4.5em;
+    img{
+        width: 25%;
+        height: 25%;
+        border-radius: 15%;
+        box-shadow: 1px 1px 1px 0 rgb(209, 102, 221), 1px 1px 1px 0 #d66, 0px 0px 1px 1px rgb(221, 197, 102);
+    }
+}
+
+.initContainer > div{
+    color: #fff6f6e1;
+    width: 50%;
+    text-align: center;
+    h4{
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #FFF;
+    }
+}
+
+.aboutmeContainer, .hobbitsContainer {
+    margin-top: 3.5em;
+    h4{
+        display: block;
+        text-align: center;
+        font-weight: 700;
+        color: #FFF;
+        font-size: 2.5rem;
+    }
+
+}
+
+.cardContainer{
+/*     border: 1px solid #eb6060;
+ */    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    text-align: center; */
+    color: #fff6f6e1;
+    section{
+        width: 25%;
+    }
+}
+
+section {
+    box-shadow: 1px 1px 4px 4px rgba(226, 223, 223, 0.2), 1px 1px 4px 4px rgba(255, 255, 255, 0.315);
+    border-radius: 1rem;
+    padding: 0.5em;
+    margin-top: 1.3rem;
+}
+
+section > h3{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.knowlegeContainer{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides{
+    border: 2px solid #8b0707;
+    display: none;
+}
+
+.carrouselContainer{
+    position: relative;
+    border: 1px solid #7577dfe1;
+    width: 100%;
+    margin-top: 3.5rem;
+}
+
+.imgContainer{
+    height: 350px;
+    /* background-image: url(../assets/reading.jpg); 
+    background-size: cover;*/
+    color: #FFF;
+/*     position: relative; */
+    text-align: center;
+    flex-direction: column;
+    p{
+        padding: 4%;
+        font-size: 1.1rem;
+        margin: 0;
+    };
+}
+
+img{
+    width: 100%;
+}
+
+button{
+    position: absolute;
+    background-color: transparent;
+/*     padding: 0px; */
+    border: 0px;
+}
+
+.back{
+    top: 50%;
+    left: 1%;
+}
+
+.next{
+    right: 1%;
+    top: 50%;
+}
+
+/* attemp with animation */
+
+.reduceOpacity{
+    animation: reduceOpacity 1.2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes reduceOpacity{
+    0% {opacity: 0.50;}
+    30% {opacity: 0.40}
+    65% {opacity: 0.30}
+    70% {opacity: 0.10}
+    100% {
+        opacity: 0;
+    }
+}
+
+.increaseOpacityElement{
+    animation: increaseOpacity 1s;
+    animation-iteration-count: 0.80;
+}
+
+@keyframes increaseOpacity{
+    0% {opacity: 0.20;}
+    30% {opacity: 0.40}
+    65% {opacity: 0.60}
+    70% {opacity: 0.60}
+    100% {
+        opacity: 1;
+    }
+}
+
+.scaleElement{
+    transform: scale(0.8);
+    transition: transform 2s ease;
+}
