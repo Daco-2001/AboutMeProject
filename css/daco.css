@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@100;400&display=swap');
 
-/* *{
+*{
     border: 1px solid #000;
 }
- */
+
 body {
     margin: 0;
     font-family: "Poppins", serif;
     font-style: normal;
     background-color: #334e70;
+    color:white;
 }
 
 .material-symbols-outlined{
@@ -19,14 +20,14 @@ body {
 }
 
 button > span {
-    transition: transform 1s ease;
+    transition: transform 0.5s ease;
 }
 
 button > span:hover{
     /* font-weight: 900; */
    /*  color: #1e3f66; */
     /* font-size: 50px; */
-    transform: scale(1.5);
+    transform: scale(1.7);
 }
 
 
@@ -136,7 +137,7 @@ h4{
     text-align: center; */
     color: #fff6f6e1;
     section{
-        width: 25%;
+        width: 20%;
     }
 }
 
@@ -173,7 +174,7 @@ img{
     position: relative;
     border: 1px solid #7577dfe1;
     width: 100%;
-    margin-top: 3.5rem;
+    margin-top: 2rem;
 }
 
 .imgContainer{
@@ -248,3 +249,54 @@ button{
     transform: scale(0.8);
     transition: transform 2s ease;
 }
+
+/* Knowledge Container Styles */
+
+.knowlegeCardsContainer{
+    margin-right: 10%;
+    margin-left: 10%;
+    /* border: 1px Solid #30f808; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardStandardStyles{
+    text-align: center;
+    align-content: center;
+    width: 25%;
+    height: 25em;
+    border-radius: 15px;
+    border: 2px double transparent;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    img {
+        width:120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 1px transparent;
+    }
+    h4{
+        margin-top: 25px;
+        margin-bottom: 0px;
+    }
+    p{
+        margin-top: 15px;
+    }
+}
+
+.jsGradient{
+    background-image: linear-gradient(#334e70, #334e70), radial-gradient(at top left, rgb(255, 255, 15), rgb(255, 255, 255));
+    box-shadow: 4px 4px 4px 0px rgba(233, 236, 40, 0.87) inset;
+}
+.cssGradient{
+    background-image: linear-gradient(#334e70, #334e70), radial-gradient(at top left, rgb(119, 223, 255) 60%, rgb(238, 238, 238));
+    box-shadow: 3px 3px 4px 0px rgb(119, 223, 255) inset;
+}
+
+.htmlGradient{
+    background-image: linear-gradient(#334e70, #334e70), radial-gradient(at top left, rgb(255, 123, 15), rgb(241, 241, 220));
+    box-shadow: 3px 3px 4px 0px rgb(255, 123, 15) inset; 
+}
+
+
+
