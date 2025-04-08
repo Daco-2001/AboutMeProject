@@ -115,7 +115,7 @@ h4{
     }
 }
 
-.aboutmeContainer, .hobbitsContainer{
+.aboutmeContainer, .hobbitsContainer, .knowledgeContainer{
     margin-top: 3em;
     h4{
         display: block;
@@ -127,22 +127,11 @@ h4{
 
 }
 
-.knowledgeContainer > h4{
-    display: block;
-        text-align: center;
-        font-weight: 700;
-        color: #FFF;
-        font-size: 2.5rem;
-}
-
 .cardContainer{
 /*     border: 1px solid #eb6060;
- */    display: flex;
+ */ display: flex;
     align-items: center;
     justify-content: space-evenly;
-    /* grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 20px;
-    text-align: center; */
     color: #fff6f6e1;
     section{
         width: 20%;
@@ -187,10 +176,7 @@ img{
 
 .imgContainer{
     height: 350px;
-    /* background-image: url(../assets/reading.jpg); 
-    background-size: cover;*/
     color: #FFF;
-/*     position: relative; */
     text-align: center;
     flex-direction: column;
     p{
@@ -275,10 +261,6 @@ button{
     align-content: center;
     width: 23%;
     height: 25em;
-    /* border-radius: 15px;
-    border: 2px double transparent;
-    background-origin: border-box;
-    background-clip: padding-box, border-box; */
     border: none;
     img{
         width:120px;
