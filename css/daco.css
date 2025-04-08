@@ -259,8 +259,8 @@ button{
 .cardStandardStyles{
     text-align: center;
     align-content: center;
-    width: 23%;
-    height: 25em;
+    width: 21%;
+    height: 26em;
     border: none;
     img{
         width:120px;
@@ -271,9 +271,6 @@ button{
     h4{
         margin-top: 25px;
         margin-bottom: 0px;
-    }
-    p{
-        margin-top: 15px;
     }
 }
 
@@ -309,23 +306,48 @@ button{
 }
 
 .back-card{
-    background-color: rgb(106, 39, 192);
+    background-color: #334e70;
     transform: rotateY(180deg);
+    align-content: flex-start;
+}
 
+.first-back-section{
+    height: 45%;
+    /* background-image: linear-gradient(rgb(255, 255, 15) 65%, rgb(255, 255, 255)); */
+    border-radius: 15px 15px 50px 50px;
+    margin: 4%;
+    align-content: center;
+}
+
+.second-back-section{
+    p, h3{
+        margin-bottom:0px;
+    }
 }
 
 .jsGradient{
     background-image: linear-gradient(#334e70, #334e70), radial-gradient(at top left, rgb(255, 255, 15), rgb(255, 255, 255));
     box-shadow: 4px 4px 4px 0px rgba(233, 236, 40, 0.87) inset;
 }
+.jsBackGradient{
+    background-image: radial-gradient(at bottom left, rgb(206, 226, 134), rgb(255, 255, 15));
+}
+
 .cssGradient{
     background-image: linear-gradient(#334e70, #334e70), radial-gradient(at top left, rgb(119, 223, 255) 60%, rgb(238, 238, 238));
     box-shadow: 3px 3px 4px 0px rgb(119, 223, 255) inset;
 }
 
+.cssBackGradient{
+    background-image: radial-gradient(at bottom left, rgb(212, 236, 240), rgb(7, 130, 245));
+}
+
 .htmlGradient{
     background-image: linear-gradient(#334e70, #334e70), radial-gradient(at top left, rgb(255, 123, 15), rgb(241, 241, 220));
     box-shadow: 3px 3px 4px 0px rgb(255, 123, 15) inset; 
+}
+.htmlBackGradient{
+    background-image: radial-gradient(at bottom left, rgb(240, 220, 212), rgb(245, 75, 7));
 }
 
 

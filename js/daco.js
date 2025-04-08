@@ -43,8 +43,6 @@ function nextSlide() {
 }
 
 function backSlide() {
-    console.log("Welcome to back slide");
-    
     position = position - 1;
     if (position < 0) {
         alert("We can't to show more slides to the left, you are in first slide");
